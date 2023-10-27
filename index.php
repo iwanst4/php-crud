@@ -28,7 +28,7 @@
             CRUD <cite title="Source Title">Create Read Update Delete</cite>
             </figcaption>
         </figure>
-        <a href="kelola.html" type="button" class="btn btn-primary mb-3">
+        <a href="kelola.php" type="button" class="btn btn-primary mb-3">
             <i class="fa fa-plus"></i>
             Tambah Data
         </a>
@@ -47,7 +47,7 @@
               </thead>
               <tbody>
                 <tr>
-                    <td><center>NO</center></td>
+                    <td><center>1</center></td>
                     <td>NISN</td>
                     <td>Nama</td>
                     <td>Jenis Kelamin</td>
@@ -56,12 +56,12 @@
                     </td>
                     <td>Alamat</td>
                     <td>
-                        <button type="button" class="btn btn-success btn-sm">
+                        <a href="kelola.php?ubah=1" type="button" class="btn btn-success btn-sm">
                             <i class="fa fa-pencil"></i>
-                        </button>
-                        <button type="button" class="btn btn-danger btn-sm">
+                        </a>
+                        <a href="proses.php?hapus=1" type="button" class="btn btn-danger btn-sm">
                             <i fa class="fa fa-trash"></i>
-                        </button>
+                        </a>
                     </td>
                 </tr>
               </tbody>
