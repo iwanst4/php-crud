@@ -1,3 +1,12 @@
+<?php 
+include 'koneksi.php';
+
+$query = "SELECT * FROM tb_siswa;";
+$sql = mysqli_query($conn, $query);
+
+$result = mysqli_fetch_assoc($sql);
+var_dump($result);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,6 +55,9 @@
                 </tr>
               </thead>
               <tbody>
+                <?php 
+                    while( $result = mysqli_fetch_assoc($sql) ) {
+                ?>
                 <tr>
                     <td><center>1</center></td>
                     <td>NISN</td>
@@ -64,6 +76,7 @@
                         </a>
                     </td>
                 </tr>
+                <?php } ?>
               </tbody>
             </table>
         </div>
